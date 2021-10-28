@@ -8,4 +8,7 @@ An android application focused on achieving fitness and health goals in a more c
 
 # Features
 
-. Build and edit workout programs.
+-Daily Progress.
+-Exercise Remainder.
+-Rest day
+
