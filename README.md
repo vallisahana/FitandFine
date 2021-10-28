@@ -1,5 +1,7 @@
 # FitandFine
 
+![fit-modified](https://user-images.githubusercontent.com/50112096/139279479-339583d8-6548-4857-8d36-681f9deb0e7a.png)
+
 30 days challenge
 
 ## Description
