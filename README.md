@@ -15,7 +15,8 @@ An android application focused on achieving fitness and health goals in a more c
 * Rest day
 
 ## ScreenShots
-![](images/https://github.com/vallisahana/FitandFine/blob/master/Screenshot/splash.jpg)
+<img src="https://github.com/vallisahana/FitandFine/blob/master/Screenshot/splash.jpg"  width="250" height="500"> <img src="https://github.com/vallisahana/FitandFine/blob/master/Screenshot/welcome.jpg"  width="250" height="500"> <img src="https://github.com/vallisahana/FitandFine/blob/master/Screenshot/login.jpg"  width="250" height="500"> <img src="https://github.com/vallisahana/FitandFine/blob/master/Screenshot/register.jpg"  width="250" height="500"> <img src="https://github.com/vallisahana/FitandFine/blob/master/Screenshot/home.jpg"  width="250" height="500"> <img src="https://github.com/vallisahana/FitandFine/blob/master/Screenshot/navi.jpg"  width="250" height="500"> <img src="https://github.com/vallisahana/FitandFine/blob/master/Screenshot/daypage.jpg"  width="250" height="500"> <img src="https://github.com/vallisahana/FitandFine/blob/master/Screenshot/exercise.jpg"  width="250" height="500">
+
 
 ## Setup
 To run this project, install it locally using npm:
