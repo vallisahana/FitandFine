@@ -8,7 +8,7 @@ An android application focused on achieving fitness and health goals in a more c
 
 # Features
 
--Daily Progress.
--Exercise Remainder.
--Rest day
+* Daily Progress.
+* Exercise Remainder.
+* Rest day
 
