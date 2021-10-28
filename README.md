@@ -15,7 +15,7 @@ An android application focused on achieving fitness and health goals in a more c
 * Rest day
 
 ## ScreenShots
-![](images filename
+![](images/filename%201635430156248.jpg)
 
 ## Setup
 To run this project, install it locally using npm:
