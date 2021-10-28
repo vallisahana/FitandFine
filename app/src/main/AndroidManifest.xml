@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fitandfine">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name=".utils.Excercise_AbsWomenApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/fit"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/fit"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Ex_activities.Welcome" />
+        <activity android:name=".Ex_activities.Login" />
+        <activity android:name=".Ex_activities.Register" />
+        <activity
+            android:name=".Ex_activities.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Ex_activities.SplashScreen"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Ex_activities.ActivityAbout"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Ex_activities.Ex_DayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ex_activities.Ex_RestDayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ex_activities.Ex_TipsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ex_activities.Ex_CompletionExcActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ex_activities.ExcDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ex_alarm.Ex_AlarmMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ex_activities.MainExcerciseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ex_activities.privacy_policy"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ex_activities.Terms"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name=".Ex_alarm.Ex_NotificationPublisher"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name=".alarmmanagerdemo.NOTIFY_ACTION" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Ex_AbsBootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="android.intent.action.REBOOT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Ex_alarm.Ex_AlarmReciever"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

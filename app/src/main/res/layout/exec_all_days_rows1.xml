@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear1"
+
+        android:layout_width="match_parent"
+        android:layout_marginRight="4dp"
+  android:layout_marginLeft="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:padding="2dp"
+        android:background="@drawable/dayshapewhite"
+        android:layout_height="106dp"
+
+        android:orientation="vertical">
+    <TextView
+            android:id="@+id/row_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/progressbar"
+            style="@style/NumberProgressBar_Custome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="13dp" />
+
+        <ImageView
+            android:id="@+id/restImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rest_day_cup"
+            android:visibility="gone" />
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:id="@+id/changetext"
+        android:visibility="gone"
+        android:layout_gravity="center|bottom"
+        android:gravity="center|bottom"
+        android:textSize="12sp"
+     android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    </TextView>
+    </LinearLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "418257152659",
+    "project_id": "gymfitness-2c391",
+    "storage_bucket": "gymfitness-2c391.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418257152659:android:2b114495bee9884c9a3b66",
+        "android_client_info": {
+          "package_name": "com.example.fitandfine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418257152659-55db75s6v12jrn43oh2prv2a2f2qbndh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fitandfine",
+            "certificate_hash": "620973fd44e0a19ffdaaa67f582ad28abf14a5f5"
+          }
+        },
+        {
+          "client_id": "418257152659-kh03lfoeh2h3srpgoej0tv0444s4bqvv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPAjkXMOiXETK3MpBMkn-9Xxnx6oxwpL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418257152659-kh03lfoeh2h3srpgoej0tv0444s4bqvv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

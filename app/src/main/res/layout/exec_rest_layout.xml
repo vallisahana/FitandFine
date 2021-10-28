@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/restScreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#292626">
+
+    <FrameLayout
+        android:id="@+id/fl_adplaceholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/fl_adplaceholder"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="NEXT"
+                        android:textColor="#ff605b5b"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/nextExerciseName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="TRUNK ROTATION"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/nextExerciseCycles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:text="x30"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14.0sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <kr.pe.burt.android.lib.faimageview.FAImageView
+                    android:id="@+id/nextExercisAnimation"
+                    android:layout_width="100.0dip"
+                    android:layout_height="100.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5.0dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip">
+
+                <TextView
+                    android:id="@+id/pauseRestTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:padding="10.0dip"
+                    android:text="PAUSE"
+                    android:textColor="@color/activeColor"
+                    android:textSize="22.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/resumeRestTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:padding="10.0dip"
+                    android:text="RESUME"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="180.0dip"
+                    android:layout_marginTop="40dp"
+                    android:layout_centerInParent="true">
+
+                    <ProgressBar
+                        android:id="@+id/rest_timer"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="180.0dip"
+                        android:layout_gravity="center"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/neo_shape_startex" />
+
+                    <TextView
+                        android:id="@+id/rest_counting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1"
+                        android:textColor="#ffffffff"
+                        android:textSize="50.0sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/skipRestTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25.0dip"
+                    android:padding="10.0dip"
+                    android:text="SKIP"
+                    android:textColor="#ffffffff"
+                    android:textSize="20.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/trainingplan"
+            android:icon="@drawable/ic_action_training"
+            android:title="Training plans" />
+        <item
+            android:id="@+id/reminder"
+            android:icon="@drawable/ic_action_alarm"
+            android:title="Reminder" />
+        <item
+            android:id="@+id/restartprogress"
+            android:icon="@drawable/ic_action_restart"
+            android:title="Restart progress" />
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_action_setting"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/privacy"
+            android:icon="@drawable/ic_baseline_share_24"
+            android:title="Share App" />
+        <item
+            android:id="@+id/terms"
+            android:icon="@drawable/ic_baseline_star_rate_24"
+            android:title="Rate App" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_baseline_close_24"
+            android:title="Logout" />
+       <!-- <itemerms &amp; condition
+            android:id="@+id/privacy"
+            android:icon="@drawable/ic_action_setting"
+            android:title="Privacy Policy" />
+        <item
+            android:id="@+id/terms"
+            android:icon="@drawable/ic_action_setting"
+            android:title="Terms &amp; condition" />-->
+    </group>
+</menu>

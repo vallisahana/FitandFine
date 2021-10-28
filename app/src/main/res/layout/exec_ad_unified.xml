@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.formats.UnifiedNativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:minHeight="50.0dip"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/neo_layout_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffee8328"
+                    android:text="AD"
+                    android:textColor="#ffffffff"
+                    android:textSize="8.0sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/popup_content_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5.0dip" />
+
+                <com.google.android.gms.ads.formats.MediaView
+                    android:id="@+id/popup_appinstall_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#ffffffff" />
+
+                <ImageView
+                    android:id="@+id/close_ad_popup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="12.0dip"
+                    android:src="@drawable/neo_ic_action_ad_close" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:orientation="horizontal"
+                android:paddingTop="4.0dip">
+
+                <ImageView
+                    android:id="@+id/popup_appinstall_app_icon"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:adjustViewBounds="true"
+                    android:paddingBottom="5.0dip" />
+
+                <RelativeLayout
+                    android:id="@+id/descriptionLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_toLeftOf="@+id/popup_appinstall_call_to_action"
+                    android:layout_toRightOf="@+id/popup_appinstall_app_icon"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/popup_appinstall_headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:lines="1"
+                        android:text="Adss"
+                        android:textColor="@android:color/black"
+                        android:textSize="18.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/popup_appinstall_body"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/popup_appinstall_headline"
+                        android:layout_marginBottom="8.0dip"
+                        android:layout_marginRight="20.0dip"
+                        android:layout_marginTop="4.0dip"
+                        android:lines="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="15.0sp" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/popup_appinstall_call_to_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="12.0dip"
+                    android:background="#ffee8328"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:text=" Install Now "
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16.0sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.gms.ads.formats.UnifiedNativeAdView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#8c000000">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="25.0dip"
+        android:background="@drawable/neo_dialoguebackground">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/neo_textviewbackgroundpurple"
+            android:gravity="center"
+            android:paddingBottom="15.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="15.0dip"
+            android:text="@string/thanks_for_using_this_app_n_would_you_like_to_try_more"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:text="@string/try_these_also"
+            android:textColor="@color/activeColor"
+            android:textSize="15.0sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerAdd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview2"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="25.0dip"
+            android:layout_marginTop="27.0dip"
+            android:background="#ffffffff"
+            android:scrollbarSize="2.0dip"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="horizontal" />
+
+        <Button
+            android:id="@+id/btnYes"
+            android:layout_width="70.0dip"
+            android:layout_height="35.0dip"
+            android:layout_below="@+id/recyclerAdd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="27.0dip"
+            android:layout_marginRight="25.0dip"
+            android:background="@drawable/neo_dialoguebackgroundpurple"
+            android:text="Ok"
+            android:textColor="#ffffffff"
+            android:textSize="15.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0.0dip"
+            android:layout_below="@+id/btnYes" />
+    </RelativeLayout>
+</RelativeLayout>

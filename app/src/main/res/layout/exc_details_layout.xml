@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6.25"
+    android:layout_height="match_parent">
+
+
+
+
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1.25"
+            android:orientation="vertical">
+           &lt;!&ndash; <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="@string/banner_ad_id">
+            </com.google.android.gms.ads.AdView>&ndash;&gt;
+        </LinearLayout>-->
+        <kr.pe.burt.android.lib.faimageview.FAImageView
+            android:id="@+id/animation_exDetail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+         />
+
+        <TextView
+            android:id="@+id/description_exDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_regular"
+            android:padding="8dp"
+            android:text="DONKEY KICKS RIGHT\nStart on all fours with your knees under butt. Then lift your right leg and squeeze your butt as much as you can."
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+    </LinearLayout>

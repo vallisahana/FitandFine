@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#c8000000">
+
+    <FrameLayout
+        android:id="@+id/layoutContainer_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/ad_close"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_gravity="center|right|top"
+            android:src="@drawable/neo_fcm_ad_close_squre"
+            android:visibility="gone" />
+    </FrameLayout>
+</FrameLayout>

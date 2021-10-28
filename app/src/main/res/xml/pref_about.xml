@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lb.material_preferences_library.custom_preferences.Preference
+        android:summary="@string/pref_app_summary"
+        android:title="@string/app_name" />
+    <com.lb.material_preferences_library.custom_preferences.Preference
+        android:summary="@string/pref_version_summary"
+        android:title="@string/pref_version_title" />
+    <com.lb.material_preferences_library.custom_preferences.Preference
+        android:summary="@string/pref_developer_summary"
+        android:title="@string/pref_developer_title" />
+    <com.lb.material_preferences_library.custom_preferences.Preference
+        android:key="@string/pref_share_key"
+        android:summary="@string/pref_share_summary"
+        android:title="@string/pref_share_title" />
+    <com.lb.material_preferences_library.custom_preferences.Preference
+        android:key="@string/pref_rate_review_key"
+        android:summary="@string/pref_rate_review_summary"
+        android:title="@string/pref_rate_review_title" />
+    <com.example.fitandfine.Ex_activities.AdPreference android:layout="@layout/ad_layout"/>
+</PreferenceScreen>

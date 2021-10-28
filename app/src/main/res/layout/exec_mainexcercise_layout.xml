@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/exec_ready_to_go"
+            android:visibility="visible"
+
+            />
+
+        <include layout="@layout/exec_rest_layout"
+            android:visibility="visible"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/hLayoutprogress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/neo_ic_close_black_24dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/timerTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="25.0dip"
+                android:text="00:00"
+                android:textColor="#ff66686b"
+                android:textSize="20.0sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+          <!--  <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView1"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_ad_id">
+            </com.google.android.gms.ads.AdView>-->
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <kr.pe.burt.android.lib.faimageview.FAImageView
+                android:id="@+id/animImageFull"
+                android:layout_width="match_parent"
+                android:layout_height="250.0dip" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+            <!--<com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView2"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_ad_id">
+            </com.google.android.gms.ads.AdView>-->
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25.0dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/eachSideTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Each Side x 8"
+                android:textColor="#ff686666"
+                android:textSize="20.0sp" />
+
+            <TextView
+                android:id="@+id/excName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="PLANK"
+                android:textColor="#ff1e1e1e"
+                android:textSize="22.0sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="wrap_content">
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/progress_one"
+                android:layout_width="fill_parent"
+                android:layout_height="75.0dip"
+
+                app:rcBackgroundColor="@color/colorPrimaryDark"
+                app:rcMax="300.0"
+                app:rcProgress="1.0"
+                app:rcProgressColor="#3F51B5"
+                app:rcRadius="0.0dip" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25.0dip">
+
+                    <TextView
+                        android:id="@+id/tv_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="#fff2f2f2"
+                        android:gravity="center"
+                        android:textSize="20.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_progress_max"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text=" /10"
+                        android:visibility="gone"
+                        android:textColor="#fff2f2f2"
+                        android:textSize="22.0sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/pauseMainExcersise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25.0dip"
+                    android:src="@drawable/neo_pause_main_progress" />
+
+                <ImageView
+                    android:id="@+id/resumeMainExcersise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25.0dip"
+                    android:src="@drawable/neo_play_main_progress"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewInRecycler"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3.0dip"
+    android:orientation="horizontal"
+    app:cardCornerRadius="3.0dip"
+    app:cardElevation="3.0dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/exerciseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:fontFamily="@font/roboto_regular"
+                android:text="TRUNK ROTATION"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/rotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="x30"
+                android:textColor="@color/activeColor"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <kr.pe.burt.android.lib.faimageview.FAImageView
+            android:id="@+id/animation"
+            android:layout_width="100.0dip"
+            android:layout_height="80.0dip"
+            android:layout_margin="5.0dip"
+            android:src="@mipmap/ic_launcher" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
